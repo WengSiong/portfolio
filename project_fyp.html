@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Year Project</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-text {
+      text-align: center; /* Center-align text and images */
+    }
+
+    .about-text img {
+      max-width: 60%; /* Adjust the size of images */
+      height: auto; /* Maintain aspect ratio */
+      margin: 20px auto; /* Add spacing around images */
+      display: block; /* Center-align images */
+    }
+
+    .about-text p {
+      font-size: 24px;
+      margin: 10px auto;
+      max-width: 80%; /* Limit text width for better readability */
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <article class="about active" data-page="about">
+
+      <header>
+        <h2 class="h2 article-title">Final Year Project</h2>
+      </header>
+
+      <section class="about-text">
+        <ul>
+          <li>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Mobile Application Development</h4>
+              <p style="text-align: justify;">My final year project that uses xaml as the front end and Java as the back end to create a mobile application called Find and Search Word Game for learning English. The project aims to promote responsible gaming and learning behavior, engagement, and motivation in language learning, and effectiveness of vocabulary acquisition tools.</p>
+            </div>
+          </li>
+
+          <img src="/assets/images/game_main.png" alt="Game Main">
+          <p>Above is the main page of the game.</p>
+
+          <img src="/assets/images/fyp1.png" alt="Game Modes">
+          <p>This application includes two types of games: Word Search and Hangman. Both games offer different levels and 10 categories of titles.</p>
+
+          <img src="/assets/images/fyp2.png" alt="Hangman Game">
+          <p>In the Hangman game, players guess the word based on the given hint. If correct, the game displays the total time, hints used, and successful guesses. Incorrect guesses accumulate errors up to seven. Players can continue with accumulated errors until they either succeed or fail.</p>
+
+          <img src="/assets/images/fyp3.png" alt="Game Categories">
+          <p>We offer 10 categories of titles and different levels for players to choose from.</p>
+
+          <img src="/assets/images/fyp4.png" alt="Word Search">
+          <p>The Word Search game at the easy level for the title "Animal." Vocabulary words to find are listed on the right, with varying levels of difficulty.</p>
+
+          <img src="/assets/images/fyp5.png" alt="Game Results">
+          <p>The result displays the time and hints used, which are saved to or retrieved from Firebase.</p>
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+</body>
+
+</html>

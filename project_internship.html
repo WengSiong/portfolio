@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            width: 22%; /* Adjust width to fit four buttons in a row */
+            height: 50px; /* Make the button rectangular */
+            margin: 10px 1%; /* Adjust margin to fit the buttons */
+            padding: 10px; /* Adjust padding to fit the new height */
+            text-align: center;
+            background-color: hsl(250, 22%, 36%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .upload-form {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .last-upload {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .button_left {
+            width: 100%;
+            padding: 30px;
+            border: 1px solid rgb(69, 63, 100);
+            background-color: rgb(81, 96, 131);
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+        .button_left:hover {
+            background-color: #2980b9;
+        }
+        .left-column {
+            width: 20%;
+            padding: 0;
+            background-color: #3a526d;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+            margin: 0;
+        }
+
+
+
+
+        .step {
+            margin-bottom: 20px;
+        }
+        .step img {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid black; /* Added black border */
+        }
+        .step p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .arrow {
+            font-size: 2em;
+            text-align: center;
+        }
+        .step.step4 img {
+            width: 70%; /* Make the last image smaller */
+            height: auto;
+        }
+        .step.step5 img {
+            width: 70%; /* Make the last image smaller */
+            height: auto;
+        }
+        .section {
+            padding: 20px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+            background-color: #171616;
+            height: 80vh; /* Set the height to 80% of the viewport height */
+            overflow-y: auto; /* Add scroll if content overflows */
+        }
+    </style>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Internship Project</h2>
+        </header>
+
+        <section class="about-text">
+            <h2>The website development I am doing is automate network dashboard. </h2>
+            <p style="font-size: 24px;">This dashboard is using the html, css, java script to be front-end and python to be back-end. The feature I am doing is using html to do a upload button to let user upload the excel file  for raw data and save in the server, after that we will using the python to connect to ssh server. Then, using the for loop to retrieve the raw data one by one and the execute command  like “write memory” to cisco device. Then, the result will send back to python and I am using the python to generate the html for show the fully result or filter result to let user more easy to view. For the network dashboard, user can decrease a lot of the process time compare with manually execute command for one-by-one hostname.</p>
+
+            <br>
+            <h3>Example:</h3>
+                <h1 id="guide_write_m">Guideline For Write Memory Function</h1>
+                <div class="step">
+                    <img src="/assets/images/write_m_step1.png" alt="Step 1">
+                    <p>Step 1: Click the button "Choose File".</p>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <img src="/assets/images/write_m_step2.png" alt="Step 2">
+                    <p>Step 2: Upload the raw data of IP addresses raw data.<a href="#add_1">(IP Address Raw Data Example)</a></p>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <img src="/assets/images/write_m_step3.png" alt="Step 3">
+                    <p>Step 3: Click "Upload Excel Button" and wait for the process until the alert message comes out.</p>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step step4">
+                    <img src="/assets/images/write_m_step4.png" alt="Step 4">
+                    <p>Step 4: Finally, you can click the write memory button to see the result of "write memory" command.</p>
+                </div>
+            
+                <h1>Additional Information</h1>
+                <h1 id="add_1">1</h1>
+                <div class="step">
+                    <img src="/assets/images/ad_write_m _2.png" alt="Step Add 1">
+                    <p>Additional Information 1: This is the example of ip address raw data.</p>
+                </div>
+            
+            
+                <h1>2</h1>
+                <div class="step">
+                    <img id="add_2" src="/assets/images/ad_write_m_1.png" alt="Step Add 2">
+                    <p>Additional Information 1: The is the date of the last upload excel folder.</p>
+                </div>
+            </div>
+
+
+    </article>
+  </main>
+
+</body>
+
+</html>
